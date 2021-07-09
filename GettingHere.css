@@ -1,0 +1,113 @@
+/* General --> applies throughout the webpage */
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Hotel location info */
+#main{
+  width: 95%;
+  height: 400px;
+  margin: 1% auto;
+  border: 2px dotted red;
+}
+
+.map{
+  float: right;
+  width: 55%;
+  margin: 6px 2px;
+  text-align: center;
+}
+
+.map iframe{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 375px;
+}
+
+.publicTrans{
+  float: left;
+  width: 44%;
+  height: 375px;
+  margin: 6px 2px;
+  border: 2px dotted blue;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.publicTrans p{
+  font-size: 18px;
+}
+
+.mrtContent{
+  margin-top: 15%;
+  margin-bottom: 3%;
+}
+
+/* Direction - general */
+.direction{
+  width: 95%;
+  margin: 1% auto;
+  height: 1220px;
+}
+
+.direction h3{
+  text-align: center;
+}
+
+/* Via which Public Transport Containers */
+.viaMrt{
+  width: 90%;
+  height: 45%;
+  margin: 1% auto;
+  border: 2px dotted brown;
+  padding: 1%;
+}
+
+.viaBus{
+  width: 90%;
+  height: 45%;
+  margin: 1% auto;
+  border: 2px dotted brown;
+  padding: 1%;
+}
+
+/* Direction on getting there Video */
+.directVideo{
+  width: 52.5%;
+  height: 90%;
+  margin: 1.2% auto;
+  border: 2px dotted brown;
+  float: left;
+  font-weight: 500;
+}
+
+
+/* Direction on getting there Content */
+.directContent{
+  width: 45%;
+  height: 90%;
+  margin: 1.2%;
+  border: 2px dotted brown;
+  float: right;
+  font-weight: 500;
+}
+
+.directContent p, .directVideo p{
+  text-align: center;
+}
+
+.directContent ol li{
+  list-style-position: inside;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+/*Indentation for inside list*/
+.indent{
+  margin-left: 5%;
+  list-style-type: lower-roman;
+}

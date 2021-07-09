@@ -1,0 +1,57 @@
+/* General --> applies throughout the webpage */
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.booking{
+  border: 2px dotted black;
+  width: 72%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 20px;
+}
+
+
+/* Form elements CSS */
+label{
+  font-weight: bold;
+}
+
+input{
+  margin: 20px 0 0 0;
+  font-size: 16px;
+}
+
+.dropdown{
+  margin: 20px 0 0 0;
+  font-size: 18px;
+}
+
+option{
+  font-size: 16px;
+}
+
+button{
+  font-size: 20px;
+  margin: 35px 0 10px 0;
+  width: 10%;
+}
+
+/* Terms */
+.terms{
+  line-height: 1.5;
+  margin: 25px 0 0 0;
+}
+
+.terms a{
+  color: blue;
+  text-decoration: none;
+}
+
+.terms input{
+  margin: 0;
+  padding: 0;
+}

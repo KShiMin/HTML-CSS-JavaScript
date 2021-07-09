@@ -1,0 +1,313 @@
+/* Responsive Navigation Menu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI, times new roman;
+}
+
+/* Header (Top Navigation Bar) */
+.frame{
+  width: 100%;
+  height: 140px;
+  margin: 10px 0px;
+}
+
+/* Logo */
+#logo{
+  width: 100%;
+  height: 80px;
+}
+
+#logo a img{
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+
+/* Navigation Bar */
+#navi{
+  width: 100%;
+  height: 50px;
+}
+
+#navi ul{
+  margin-top: 8px;
+  display: flex;
+}
+
+#navi ul li{
+  list-style-type: none;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  color: black;
+}
+
+#navi ul li:hover {
+  background-color: #D3D3D3;
+  opacity: 0.8;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+#navi ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Horizontal Line */
+hr{
+  width: 100%;
+  border-top: 3px solid #bbb;
+}
+
+/* BreadCrumbs Navigation */
+.breadcrumb{
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+
+.breadcrumb-item{
+  display: inline;
+  font-size: 14px;
+}
+
+/*when add new list, it will auto add and show in the webpage*/
+.breadcrumb li+li:before{
+  padding: 8px;
+  color: black;
+  content: ">";
+}
+
+.breadcrumb-item a{
+  color: #2e4053;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  color: black;
+}
+
+/*responsive footer*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer {
+  background-color: white;
+  padding: 30px 0;
+}
+
+/*
+Content for About Grand Oceania HarbourFront,
+Visitors Information and Contact Us
+*/
+.content h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.content h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.content ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content ul li a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.content ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+
+/* Abt Grand Oceania Harbourfront*/
+.general {
+  width: 32%;
+  padding: 0 15px;
+}
+
+/* Visitor Information and Contact Us*/
+.visitor-info {
+  width: 26%;
+  padding: 0 15px;
+}
+
+.contact-us {
+  width: 26%;
+  padding: 0 15px;
+}
+
+/*Connect with Us*/
+.social-links{
+  width: 16%;
+  padding: 0 15px;
+}
+
+.social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #E8E8E8;
+  margin: 0 5px 0 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+  font-size: 25px;
+}
+
+.social-links a:hover {
+  color: blue;
+  background-color: #ffffff;
+}
+
+/* Copyright */
+.copyright {
+  width: 32%;
+  padding: 12px;
+}
+
+.contents {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/*Responsive*/
+@media(max-width: 1120px) {
+  .general{
+    width: 40%;
+  }
+
+  .visitor-info{
+    width: 30%;
+  }
+
+  .contact-us{
+    width: 30%;
+  }
+
+  .social-links{
+    width: 25%;
+    margin-top: 25px;
+    /*
+    margin-left: auto;
+    margin-right: 5%; */ /* If these portions remain, it will affect the alignment of the different footer's sections */
+  }
+
+  .copyright {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 15%;
+  }
+
+}
+
+@media(max-width: 1050px) {
+  .general{
+    width: 45%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+
+  .visitor-info{
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+  }
+
+  .contact-us{
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .social-links{
+    width: 40%;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 40%;
+    margin-right: 28%;
+    margin-left: 10%;
+  }
+
+}
+
+@media(max-width: 707px) {
+
+  .copyright {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+}
+
+@media(max-width: 620px) {
+  .general{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .visitor-info{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .contact-us{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .social-links{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .copyright {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+}

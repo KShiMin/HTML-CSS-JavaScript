@@ -1,0 +1,45 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calender Trail</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="Calendar.css">
+    </head>
+    <body>
+      <div class="calendar-btn">
+        <input type="text" name="" id="date" placeholder="dd/mm/yyyy" onclick="hide()">
+        <i class="fa fa-calendar" onclick="hide()"></i>
+      </div>
+      <!--Calandar Outline / Frame-->
+      <div class="calendar">
+        <!--Frame for the month user are at-->
+        <div class="month">
+          <!--Previous Button-->
+          <span class="previous">&#60;</span>
+          <!--Content Frame-->
+          <div class="content">
+            <h2></h2>
+            <p></p>
+          </div> 
+          <!--Next Button-->
+          <span class="next">&#62;</span>
+        </div>
+        <!--Frame for Days (Mon - Sun)-->
+        <div class="days">
+          <div>Su</div>
+          <div>Mo</div>
+          <div>Tu</div>
+          <div>We</div>
+          <div>Th</div>
+          <div>Fr</div>
+          <div>Sa</div>
+        </div>
+        <!--Frame for Dates (1 - 30/31)-->
+        <div class="dates">
+          
+        </div>
+      </div> 
+      <script src="calendar.js"></script>
+    </body>
+</html>
