@@ -8,8 +8,7 @@ h1{
 #main{
   width: 95%;
   height: 400px;
-  margin: 1% auto;
-  border: 2px dotted red;
+  margin: 1.5% auto;
 }
 
 .map{
@@ -31,7 +30,6 @@ h1{
   width: 44%;
   height: 375px;
   margin: 6px 2px;
-  border: 2px dotted blue;
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
@@ -60,17 +58,15 @@ h1{
 /* Via which Public Transport Containers */
 .viaMrt{
   width: 90%;
-  height: 45%;
-  margin: 1% auto;
-  border: 2px dotted brown;
+  height: 32.5%;
+  margin: 1.5% auto;
   padding: 1%;
 }
 
 .viaBus{
   width: 90%;
-  height: 45%;
-  margin: 1% auto;
-  border: 2px dotted brown;
+  height: 60%;
+  margin: 1.5% auto;
   padding: 1%;
 }
 
@@ -90,13 +86,15 @@ h1{
   width: 45%;
   height: 90%;
   margin: 1.2%;
-  border: 2px dotted brown;
   float: right;
   font-weight: 500;
 }
 
 .directContent p, .directVideo p{
   text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .directContent ol li{
@@ -104,6 +102,10 @@ h1{
   line-height: 2;
   font-size: 17px;
   font-weight: normal;
+}
+
+b{
+  font-weight: 550;
 }
 
 /*Indentation for inside list*/

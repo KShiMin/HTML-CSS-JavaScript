@@ -4,49 +4,40 @@
   padding: 0;
 }
 
-/* General --> applies throughout the webpage */
 h1{
   text-align: center;
-  text-decoration: underline;
+  margin: 1% 0
 }
 
-.booking{
-  border: 2px dotted black;
-  width: 57%;
+.form{
+  width: 50%;
   margin: 1% auto;
-  text-align: center;
-  line-height: 1.5;
-  font-size: 18px;
+  padding: 1%;
+  border: 2px dotted black;
 }
-/*Form Content*/
+
 table{
-  width: 57%;
-  margin: 2% auto;
+  width: 70%;
+  margin: auto;
+}
+
+th, td{
+  padding: 1%;
 }
 
 th{
-  width: 30%;
-  text-align: left;
-  padding-left: 17%;
-  border: 2px dotted purple;
-}
-
-td{
   width: 50%;
-  padding: 1%;
-  border: 2px dotted pink;
-}
-
-span{
-  font-size: 18px;
+  text-align: left;
+  font-size: 17.5px;
+  padding-left: 29%;
 }
 
 input, select{
   width: 52.5%;
   height: 30px;
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 0.25%;
-  padding-left: 0.7%;
+  padding-left: 1%;
   border-radius: 5px;
   border: 1px solid grey;
 }
@@ -54,11 +45,11 @@ input, select{
 select{
   cursor: pointer;
 }
+
 /*Calendar input section*/
 .calendar-btn{
   width: 100%;
   margin: 1% 0;
-  margin-left: 2%;
 }
 
 .calendar-btn i{
@@ -72,7 +63,7 @@ select{
 .calendar-btn input{
   width: 52.5%;
   height: 30px;
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 0.25%;
   padding-left: 1%;
   border-radius: 5px;
@@ -84,10 +75,10 @@ select{
 .calendar{
   display: none; /*Hides the calendar div*/
   width: 15%;
-  height: 300px;
+  height: 302px;
   margin-left: 5px;
   position: absolute;
-  left: 46.35%;
+  left: 50%;
   background-color: rgb(172, 231, 255);
 }
 
@@ -118,7 +109,7 @@ select{
 }
 
 /*Month + Day + Date*/
-.content{
+.date-content{
   width: 90%;
   margin: auto;
   line-height: 1.3;
@@ -176,18 +167,13 @@ select{
   opacity: 0.65;
 }
 
-option{
-  cursor: pointer;
-  font-size: 15px;
-}
-
-/*Terms and Condition*/
 .terms{
-  width: 62%;
+  width: 100%;
   margin: 1.5% auto;
   text-align: left;
   line-height: 1.5;
   padding-left: 6%;
+  font-size: 17.5px;
 }
 
 .terms br{
@@ -207,11 +193,16 @@ option{
   cursor: pointer;
 }
 
+.mid{
+  text-align: center;
+  font-weight: 459;
+}
+
 button{
+  width: 15%;
+  height: 8%;
   font-size: 22.5px;
-  margin: 2% auto;
-  width: 12%;
-  height: 5%;
+  margin: 5% 45% 2%;
   border-radius: 25px;
   border: 1px solid grey;
   background-color: white;

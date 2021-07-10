@@ -50,8 +50,8 @@ var calendarScript = () =>{
     "August","September","October","November","December"];
 
     //set .content h1  and .content p text to month and year dynamically using js
-    document.querySelector(".content h2").innerHTML = months[monthIndex] + " " + year;
-    document.querySelector(".content p").innerHTML = new Date().toDateString();
+    document.querySelector(".date-content h2").innerHTML = months[monthIndex] + " " + year;
+    document.querySelector(".date-content p").innerHTML = new Date().toDateString();
     
     //set days to empty string --> no overlaps
     var days = "";
