@@ -117,7 +117,7 @@ hr{
 }
 
 .top:hover{
-  background-color: rgba(165, 42, 42, 0.767);
+  background-color: #cdaa7d;
   color: white;
   border: none;
 }
