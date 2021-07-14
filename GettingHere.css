@@ -59,14 +59,14 @@ h1{
 /* Via which Public Transport Containers */
 .viaMrt{
   width: 90%;
-  height: 32.5%;
+  height: 48%;
   margin: 2% auto;
   padding: 1%;
 }
 
 .viaBus{
   width: 90%;
-  height: 60%;
+  height: 48%;
   margin: 2% auto;
   padding: 1%;
 }
@@ -83,7 +83,6 @@ video{
   width: 99%;
   height: 90%;
   margin: 1.2% auto 0%;
-  border: 1px solid black;
 }
 
 /* Direction on getting there Content */
@@ -95,17 +94,18 @@ video{
   font-weight: 500;
 }
 
-.directContent p, .directVideo p{
+.directContent h4{
   text-align: center;
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
+  margin-bottom: 2%;
 }
 
 .directContent ol li{
   list-style-position: inside;
   line-height: 2;
-  font-size: 17px;
+  font-size: 16.5px;
   font-weight: normal;
 }
 
