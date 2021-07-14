@@ -11,16 +11,16 @@
 .frame{
   width: 100%;
   height: 140px;
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
 }
 
 /* Logo */
 #logo{
   width: 100%;
   height: 80px;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  z-index: 1;
 }
 
 #logo a img{
@@ -34,10 +34,6 @@
 #navi{
   width: 100%;
   height: 60px;
-  position: fixed;
-  top: 10.5%;
-  background-color: white;
-  z-index: 1;
 }
 
 #navi ul{
@@ -68,6 +64,10 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+.show{
+  margin-top: 9.5%;
 }
 
 /* Horizontal Line */
