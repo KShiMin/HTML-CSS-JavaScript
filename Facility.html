@@ -34,25 +34,92 @@
 						</ul>
 					</div>
 				</div>
+				<div class="show">
+					<hr/>
+					<ol class="breadcrumb">
+							<li class="breadcrumb-item"> <a href="#"> Home </a></li>
+					</ol>
+					<hr/>			
+				</div>
 			</nav>
 		</header>
-		<hr/>
-		<ol class="breadcrumb">
-				<li class="breadcrumb-item"> <a href="#"> Home </a></li>
-				<li class="breadcrumb-item"> <a href="Facility.html"> Facility </a></li>
-		</ol>
-		<hr/>
 		<br>
 		<main>
 			<!-- Input your Content -->
-		  <h1>Facility</h1>
-		  <!-- Pool Section-->
-		  <div class="facilityFrame">
-				<!-- Pool Images-->
+		  	<h1>Facility</h1>
+		  	<!-- Pool Section
+		  	<div class="facilityFrame">
+				<div class="slides">
+					<div class="img-container">
+						<img src="images/Facility/Outdoor Pool.jpg" alt="">
+					</div>
+					<div class="img-container">
+						<img src="images/Facility/Indoor Pool.jpg" alt="">
+					</div>
+					<div class="img-container">
+						<img src="images/Facility/Indoor Pool 2.jpg" alt="">
+					</div>
+				</div>
+			</div> -->
+
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <img src="images/Facility/Indoor Pool 2.jpg" style="width:100%">
+				  <div class="text">Description of Facility</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="images/Facility/Outdoor Pool.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="images/Facility/Indoor Pool.jpg" style="width:100%">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				<script src="slideshow.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Pool Images
 				<span class="pool-img">Image 1 - Background Image (Swimming Pool)</span>
 				<span class="pool-img">Image 2 - Image (Outdoor Swimming Pool)</span>
 				<span class="pool-img">Image 3 - Image (Indoor Swimming Pool different view)</span>
-				<!-- Pool Slideshow-->
+				 Pool Slideshow-
 				<div class="pool-imgframe">
 					<div class="poolContent">
 						<h3>Pool</h3>
@@ -86,14 +153,14 @@
 						</p>
 					</div>
 				</div>
-				<!-- Pool Button Section-->
+				Pool Button Section
 				<div class="facilityBtn-frame">
 					<span class="btn"></span>
 					<span class="btn"></span>
 					<span class="btn"></span>
 				</div>
 		  </div>
-			<!--
+			
 		  Gym 
 			<div class="facilityFrame">
 				<span class="gym-img">Image 1 - Background image (Fitness Center)</span>
