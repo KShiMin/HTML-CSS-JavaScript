@@ -13,7 +13,7 @@ h1{
   width: 50%;
   margin: 1% auto;
   padding: 1%;
-  border: 2px dotted black;
+  border: 2px dotted white;
 }
 
 table{
@@ -158,8 +158,8 @@ select{
 }
 
 /*Any item that do not have the class "current" but is under the class "dates"*/
-.dates div:hover:not(.today){   
-  background-color: rgba(128, 128, 128, 0.281); 
+.dates div:hover:not(.today){
+  background-color: rgba(128, 128, 128, 0.281);
 }
 
 /*Next & Previous Month dates*/
@@ -179,11 +179,11 @@ select{
 .terms br{
   margin: 10px auto;
   display: block;
-  content: " " ; 
+  content: " " ;
 }
 
 .terms a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
