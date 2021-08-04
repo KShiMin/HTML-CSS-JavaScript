@@ -7,14 +7,26 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: black;
+}
+
+header{
+  background-color: black;
+}
+
+main{
+  color: white;
+}
+
 /* Header (Top Navigation Bar) */
 .frame{
   width: 100%;
   height: 140px;
   position: fixed;
   top: 0;
-  background-color: rgb(255, 255, 255);
   z-index: 10;
+  background-color: black;
 }
 
 /* Logo */
@@ -48,32 +60,30 @@
   text-align: center;
   width: 100px;
   height: 35px;
-  color: black;
 }
 
 #navi ul li:hover {
-  background-color: #D3D3D3;
-  opacity: 0.8;
+  background-color: #d3d3d3a1;
   width: 100px;
   height: 35px;
   border-radius: 20px;
 }
 
 #navi ul li a{
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
 }
 
 .show{
-  margin-top: 9.5%;
+  margin-top: 8.75%;
 }
 
 /* Horizontal Line */
 hr{
   width: 100%;
-  border-top: 3px solid #bbb;
+  border-top: 2px solid white;
 }
 
 /* BreadCrumbs Navigation */
@@ -90,17 +100,17 @@ hr{
 /*when add new list, it will auto add and show in the webpage*/
 .breadcrumb li+li:before{
   padding: 8px;
-  color: black;
+  color: white;
   content: ">";
 }
 
 .breadcrumb-item a{
-  color: #2e4053;
+  color: rgba(255, 255, 255, 0.925);
   text-decoration: none;
 }
 
 .breadcrumb-item a:hover{
-  color: black;
+  color: white;
 }
 
 /*Back to Top button*/
@@ -113,17 +123,22 @@ hr{
   text-align: center;
   border-radius: 60%;
   border: 1px solid grey;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .top:hover{
   background-color: #cdaa7d;
-  color: white;
   border: none;
 }
 
 /*responsive footer*/
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -138,10 +153,6 @@ footer ul {
   list-style: none;
 }
 
-footer {
-  background-color: white;
-  padding: 30px 0;
-}
 
 /*
 Content for About Grand Oceania HarbourFront,
@@ -149,7 +160,6 @@ Visitors Information and Contact Us
 */
 .content h4 {
   font-size: 18px;
-  color: black;
   text-transform: capitalize;
   margin-bottom: 30px;
   font-weight: 500;
@@ -173,16 +183,15 @@ Visitors Information and Contact Us
 
 .content ul li a {
   font-size: 16px;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: 300;
-  color: black;
   display: block;
   transition: all 0.3s ease;
 }
 
 .content ul li a:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.849);
   padding-left: 8px;
 }
 
