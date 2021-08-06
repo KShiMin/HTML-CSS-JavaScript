@@ -28,9 +28,9 @@ th, td{
 
 th{
   width: 50%;
-  text-align: left;
+  text-align: right;
   font-size: 17.5px;
-  padding-left: 29%;
+  padding-right: 5%;
 }
 
 /* Input size box */
@@ -169,6 +169,7 @@ select{
   opacity: 0.65;
 }
 
+/* Terms and Conditions */
 .terms{
   width: 100%;
   margin: 7% auto 2%;
@@ -190,8 +191,8 @@ select{
 }
 
 .terms input{
-  width: 12.8px;
-  height: 12.8px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
 }
 

@@ -2,32 +2,55 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    	<meta name="viewport" content="width-device-width, initial-scale=1">
 		<!-- Responsive Navigation -->
 		<link rel="stylesheet" type="text/css" href="Structure.css">
 		<!-- Responsive Footer -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!---->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 		<!--Tab Icon-->
 		<link rel="icon" type="text/css" href="images/logo.png">
 		<!--Own webpage CSS link-->
-		<link rel="stylesheet" type="text/css" href="FacilityBooking.css">
-		<title>Facility Reservation</title>
+		<link rel="stylesheet" type="text/css" href="FacilityBooking.css">		<title>Grand Oceania Harbourfont</title>
   </head>
   <body>
 		<!--Responsive Header -->
 		<header>
-			<nav>
-				<!--Back to Top Destination-->
+			<div class="container" id="logo">
+				<a href="#" class="navbar-brand navbar-expand-md"><img src="images/Hotel-logo.png" alt=""></a>
+				
+			</div>
+			<nav class="navbar navbar-expand-md">
+				<div id="navi">
+					
+					<button class="navbar-toggler" type="button" data-bs-togggle="collapse" data-bs-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="navbar-nav nav-fill align-middle" >
+							<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="#room" class="nav-link">Rooms</a></li>
+							<li class="nav-item"><a href="#facility" class="nav-link">Facilities</a></li>
+							<li class="nav-item"><a href="#promo" class="nav-link">Promotion</a></li>
+							<li class="nav-item"><a href="#around" class="nav-link">Around Us</a></li>
+							<li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- <nav>
+				Back to Top Destination
 				<a id="top"></a>
 				<div class="frame">
 					<div id="logo">
-						<a href="#"><img src="images/hotel-logo.png" alt="hotel logo"></a>
+						<a href="#"><img src="images/Hotel-logo.png" alt="hotel logo"></a>
 					</div>
 					<div id="navi">
 						<ul>
 							<li class="navi"><a href="#">Home</a></li>
 							<li class="navi"><a href="#">Rooms</a></li>
-							<li class="navi"><a href="Facility.html">Facilities</a></li>
+							<li class="navi"><a href="#">Facilities</a></li>
 							<li class="navi"><a href="#">Promotions</a></li>
 							<li class="navi"><a href="#">Around Us</a></li>
 							<li class="navi"><a href="#">FAQs</a></li>
@@ -38,13 +61,17 @@
 					<hr/>
 					<ol class="breadcrumb">
 							<li class="breadcrumb-item"> <a href="#"> Home </a></li>
-							<li class="breadcrumb-item"> <a href="#"> Facility Reservation </a></li>
 					</ol>
-					<hr/>
+					<hr/>			
 				</div>
-			</nav>
+			</nav> -->
 		</header>
-		<br>
+		<!-- <hr/>
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"> <a href="#"> Home </a></li>
+			<li class="breadcrumb-item"> <a href="#"> Home </a></li>
+		</ol>
+		<hr/> -->
 		<main>
 			<!-- Input your Content-->
 			<h1>Facility Reservation</h1>
@@ -134,18 +161,18 @@
 						at <a href="mailto:enquries@grandoceaniaharbourfront.com">enquries@grandoceaniaharbourfront.com</a>.
 					</span>
 					<br>
+					<input type="radio"  name="acknowledgement" value="" required="required" id="radio">
 					<span>
-						<input type="radio"  name="acknowledgement" value="" required="required">
 						I agree with the items mentioned and in any event I broke any of the items
 						mentioned above I will accept the consequences stated by Grand Oceania Harbourfont.
 					</span>
 				</div>
-				<button type="submit" name="submit">Submit</button>
+				<a href="#confirmation"><button type="submit" name="submit">Submit</button></a>
 			</form>
 		  	<script src="calendar.js"></script>
 			<!--Back to Top Button-->
 		  	<a href="#top" class="top">^</a>
-		</main>
+	</main>
 <!--Responsive Footer -->
 		<hr>
     <footer>
@@ -157,7 +184,7 @@
 	            <ul>
 	              <li> <a href="#"> Home </a> </li>
 	              <li> <a href="#"> Rooms </a> </li>
-	              <li> <a href="Facility.html"> Facilities </a> </li>
+	              <li> <a href="#"> Facilities </a> </li>
 	              <li> <a href="#"> Promotions </a> </li>
 	            </ul>
 						</div>
@@ -168,7 +195,7 @@
 							<h4> Visitors Information </h4>
 							<ul>
 	              <li> <a href="#"> Frequently Asked Questions </a> </li>
-	              <li> <a href="GettingHere.html"> Getting There </a> </li>
+	              <li> <a href="#"> Getting There </a> </li>
 	              <li> <a href="#"> Around Us </a> </li>
 	            </ul>
 						</div>
@@ -188,9 +215,9 @@
           <div class="social-links">
 						<div class="content">
 							<h4> Connect with Us </h4>
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" style="color: #D6249F"><i class="fab fa-instagram"></i></a>
-						<a href="#" style="color: red"><i class="fab fa-youtube"></i></a>
+	            <a href="#"><i class="fab fa-facebook-f"></i></a>
+	            <a href="#" style="color: #D6249F"><i class="fab fa-instagram"></i></a>
+	            <a href="#" style="color: red"><i class="fab fa-youtube"></i></a>
 						</div>
 					</div>
 					<br/>
@@ -202,5 +229,7 @@
 				</div>
 			</div>
 		</footer>
+		<!---->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <body>
 </html>
