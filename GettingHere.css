@@ -4,6 +4,7 @@ h1{
   text-decoration: underline;
 }
 
+/* Display flex for all content container */
 .positions{
   display: flex;
   margin: 2.5% 1.5%;
@@ -19,6 +20,10 @@ h1{
 
 .publicTrans p{
   font-size: 18px;
+}
+
+.publicTrans h3{
+  line-height: 1.5;
 }
 
 .mrtContent{
@@ -46,20 +51,15 @@ h3{
   margin: 0 !important;
 }
 
-/* Via which Public Transport Containers */
-
-
 /* Direction on getting there Video */
 .directVideo{
   width: 52.5%;
   float: left;
   font-weight: 500;
-  justify-content: center;
 }
 
 video{
-  width: 99%;
-  height: 90%;
+  width: 100%;
   margin: 1.2% auto 0%;
 }
 
@@ -74,7 +74,7 @@ video{
 
 .directContent h4{
   text-decoration: underline;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ video{
   list-style-position: inside;
   text-align: justify;
   line-height: 2;
-  font-size: 16.5px;
+  font-size: 17px;
   font-weight: normal;
 }
 
@@ -95,6 +95,73 @@ b{
   list-style-type: lower-roman;
 }
 
+/* Responsive Webpage Content */
+
+/* Horizontal View Port (with reference to iPad Pro) */
+/* Gotten from developer console */
+@media (max-width: 1366px) {
+  .viaBus video{
+    margin: 12% auto;
+  }
+}
+
+/* Vertical View Port (with reference to iPad Pro) */
+/* Gotten from developer console */
+@media (max-width : 1025px) {
+  .h1{
+    margin: 0;
+  }
+
+  /* Map content */
+  .map iframe{
+    height: 300px;
+  }
+  /* set back the original formatting */
+  .viaBus video{
+    margin: 1.2% auto 0%;
+  }
+
+  /* Content width */
+  .directVideo, .directContent{
+    width: 100%;
+  }
+
+  .videoContent-positions{
+    display: block;
+  }
+
+  .directContent, .directContent ol ul{
+    text-align: center;
+  }
+}
+
+/* Vertical View Port (with reference to iPhone) */
 @media (max-width : 430px) {
-  
+  .h1{
+    margin: 0;
+  }
+  .positions{
+    display: block;
+    margin: 2% 0%;
+  }
+  /* Map content */
+  .map iframe{
+    height: 200px;
+  }
+  /* Content width */
+  .publicTrans, .map, .directVideo, .directContent{
+    width: 100%;
+  }
+  /* Content font-sizes */
+  .publicTrans p, .directContent ol li{
+    font-size: 14px;
+  }
+
+  h3, .publicTrans h3{
+    font-size: 17px;
+  }
+
+  .directContent h4{
+    font-size: 15px;
+  }
 }
