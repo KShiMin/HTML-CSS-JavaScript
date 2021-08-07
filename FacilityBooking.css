@@ -31,12 +31,17 @@ table th{
   font-size: 18px;
 }
 
+.calendar-container{
+  width: fit-content;
+}
+
 /* Calendar Icon Position */
 .position{
   color: black;
+  margin-top: 0.25%;
   font-size: 18px;
-  position: relative;
-  right: 11%;
+  position: absolute;
+  left: 57%;
 }
 
 
@@ -79,4 +84,103 @@ button:hover{
 
 button a:hover{
   color: white;
+}
+
+/* Responsive Webpage Content */
+/* Gotten viewport sizes from developer console */
+
+/* Horizontal View Port (with reference to iPad Pro) */
+@media (max-width: 1366px) {
+  /* Table width */
+  table{
+    width: 45% !important;
+  }
+
+  /* Terms and Conditions font-sizing */
+  .terms input{
+    width: 15px;
+    height: 15px;
+  }
+
+  button, .terms h4{
+    font-size: 18px;
+  }
+}
+
+/* Vertical View Port (with reference to iPad Pro) */
+@media (max-width : 1025px) {
+  /* Table width */
+  table{
+    width: 55% !important;
+  }
+
+  /* Calendar Icon */
+  .position{
+    margin-top: 0.75%;
+    font-size: 16px;
+    left: 63%;
+  }
+
+  /* Terms and Conditions font-sizing */
+  .terms input{
+    width: 15px;
+    height: 15px;
+  }
+
+  button, .terms h4{
+    font-size: 18px;
+  }
+}
+
+/* Vertical View Port (with reference to iPhone X) */
+@media (max-width : 812px) {
+  /* Calendar Icon */
+  .position{
+    margin-top: 0.75%;
+    font-size: 16px;
+    left: 67%;
+  }
+
+}
+
+/* Vertical View Port (with reference to iPhone) */
+@media (max-width : 430px) {
+  /* Table width and font-sizes */
+  table{
+    width: 90% !important;
+  }
+
+  table th{
+    font-size: 15px;
+  }
+
+  /* Form Inputs */
+  table input, table select{
+    height: 10%;
+  }
+
+  /* Calendar Icon */
+  .position{
+    margin-top: 1%;
+    font-size: 16px;
+    left: 85%;
+  }
+
+  /* Terms and Conditions font-sizing */
+  .terms p{
+    font-size: 14px;
+  }
+
+  .terms input{
+    width: 12px;
+    height: 12px;
+  }
+
+  .terms h4{
+    font-size: 15px;
+  }
+
+  button{
+    font-size: 14px;
+  }
 }

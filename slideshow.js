@@ -20,7 +20,6 @@ function showSlidesPool(n) {
     }
     if (n < 0) {
       slideIndexPool = poolSlides.length - 1;
-      console.log(slideIndexPool)
     }
 
     for (var i = 0; i < poolSlides.length; i++) {

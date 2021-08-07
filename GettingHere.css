@@ -96,9 +96,9 @@ b{
 }
 
 /* Responsive Webpage Content */
+/* Gotten viewpoet sizes from developer console */
 
 /* Horizontal View Port (with reference to iPad Pro) */
-/* Gotten from developer console */
 @media (max-width: 1366px) {
   .viaBus video{
     margin: 12% auto;
@@ -106,7 +106,6 @@ b{
 }
 
 /* Vertical View Port (with reference to iPad Pro) */
-/* Gotten from developer console */
 @media (max-width : 1025px) {
   .h1{
     margin: 0;
