@@ -7,43 +7,48 @@
 		<link rel="stylesheet" type="text/css" href="Structure.css">
 		<!-- Responsive Footer -->
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!--Bootstrap stylesheet-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 		<!--Tab Icon-->
 		<link rel="icon" type="text/css" href="images/logo.png">
 		<!--Own webpage CSS link-->
 		<link rel="stylesheet" type="text/css" href="Facility.css">
 		<title>Facility</title>
-  </head>
-  <body>
+  	</head>
+  	<body>
 		<!--Responsive Header -->
 		<header>
-			<nav>
-				<!--Back to Top Destination-->
-				<a id="top"></a>
-				<div class="frame">
-					<div id="logo">
-						<a href="#"><img src="images/hotel-logo.png" alt="hotel logo"></a>
-					</div>
-					<div id="navi">
-						<ul>
-							<li class="navi"><a href="#">Home</a></li>
-							<li class="navi"><a href="#">Rooms</a></li>
-							<li class="navi"><a href="Facility.html">Facilities</a></li>
-							<li class="navi"><a href="#">Promotions</a></li>
-							<li class="navi"><a href="#">Around Us</a></li>
-							<li class="navi"><a href="#">FAQs</a></li>
+			<div class="container" id="logo">
+				<a href="#" class="navbar-brand navbar-expand-md"><img src="images/Hotel-logo.png" alt=""></a>
+			</div>
+			
+			<nav class="navbar navbar-expand-md">
+				<div id="navi">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>					
+					<div class="navbar-collapse collapse" id="navbar">
+						<ul class="navbar-nav nav-fill align-middle" >
+							<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="#room" class="nav-link">Rooms</a></li>
+							<li class="nav-item"><a href="Facility.html" class="nav-link">Facilities</a></li>
+							<li class="nav-item"><a href="#promo" class="nav-link">Promotion</a></li>
+							<li class="nav-item"><a href="#around" class="nav-link">Around Us</a></li>
+							<li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="show">
-					<hr/>
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"> <a href="#"> Home </a></li>
-						<li class="breadcrumb-item"> <a href="#"> Facility </a></li>
-					</ol>
-					<hr/>
-				</div>
 			</nav>
 		</header>
+		<!--Breadcrumbs-->
+		<hr>
+		<nav style="--bs-breadcrumb-divider: '>';">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#home">Home</a></li>
+			  <li class="breadcrumb-item"><a href="Facility.html">Facility</a></li>
+			</ol>
+		  </nav>
+		<hr>
 		<main>
 			<!-- Input your Content -->
 		  	<h1>Facility</h1>

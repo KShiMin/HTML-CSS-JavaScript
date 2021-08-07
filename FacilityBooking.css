@@ -9,23 +9,74 @@
   margin: 1% 0
 }
 
+.form-container{
+  box-shadow: -10px 10px rgb(151, 151, 151);
+}
+
 table{
-  width: 40% !important;
-  margin: auto;
+  width: 30% !important;
+  margin: 2% auto !important;
   color: white !important;
+  border: 1px solid white;
+}
+
+th, td{
+  border-style: none !important;
+  padding: 1%;
 }
 
 table th{
   width: 45%;
   text-align: right;
+  font-size: 18px;
 }
 
-p{
+/* Calendar Icon Position */
+.position{
+  color: black;
+  font-size: 18px;
+  position: relative;
+  right: 11%;
+}
+
+
+/* Terms and Conditions */
+.terms{
   margin: 0 !important;
   text-align: justify;
+  line-height: 1.5;
+  padding-left: 10%;
 }
 
-p a{
+.terms a{
   color: white;
   text-decoration: none;
+}
+
+.terms input{
+  width: 17px;
+  height: 17px;
+}
+
+/* Submit button */
+button{
+  width: 14%;
+  height: 8%;
+  font-size: 22.5px;
+  margin: 0% 43%;
+  border-radius: 10px;
+  border:none;
+}
+
+button a{
+  text-decoration: none;
+  color: black;
+}
+
+button:hover{
+  background-color: #cdaa7d;
+}
+
+button a:hover{
+  color: white;
 }

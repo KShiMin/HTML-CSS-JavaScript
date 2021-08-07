@@ -4,32 +4,14 @@ h1{
   text-decoration: underline;
 }
 
-/* Hotel location info */
-#main{
-  width: 95%;
-  height: 400px;
-  margin: 1.5% auto;
+.positions{
+  display: flex;
+  margin: 2.5% 1.5%;
 }
 
-.map{
-  float: right;
-  width: 55%;
-  margin: 6px 2px;
-  text-align: center;
-}
-
-.map iframe{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 375px;
-}
-
+/* Public Transport position */
 .publicTrans{
-  float: left;
-  width: 44%;
-  height: 375px;
-  margin: 6px 2px;
+  width: 45%;
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
@@ -44,39 +26,35 @@ h1{
   margin-bottom: 3%;
 }
 
-/* Direction - general */
-.direction{
-  width: 95%;
-  margin: 1% auto;
-  height: 1220px;
+/* Hotel location info */
+.map{
+  float: right;
+  width: 55%;
+  text-align: center;
+  margin: 0 !important;
 }
 
-.direction h3{
+.map iframe{
+  padding: 0;
+  width: 100%;
+  height: 400px;
+}
+
+/* Direction - general */
+h3{
   text-align: center;
-  margin: 1.5% 0%;
+  margin: 0 !important;
 }
 
 /* Via which Public Transport Containers */
-.viaMrt{
-  width: 90%;
-  height: 48%;
-  margin: 2% auto;
-  padding: 1%;
-}
 
-.viaBus{
-  width: 90%;
-  height: 48%;
-  margin: 2% auto;
-  padding: 1%;
-}
 
 /* Direction on getting there Video */
 .directVideo{
   width: 52.5%;
-  height: 95%;
   float: left;
   font-weight: 500;
+  justify-content: center;
 }
 
 video{
@@ -95,26 +73,28 @@ video{
 }
 
 .directContent h4{
-  text-align: center;
   text-decoration: underline;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 2%;
 }
 
 .directContent ol li{
   list-style-position: inside;
+  text-align: justify;
   line-height: 2;
   font-size: 16.5px;
   font-weight: normal;
 }
 
 b{
-  font-weight: 550;
+  font-weight: 600;
 }
 
 /*Indentation for inside list*/
 .indent{
-  margin-left: 5%;
   list-style-type: lower-roman;
+}
+
+@media (max-width : 430px) {
+  
 }
