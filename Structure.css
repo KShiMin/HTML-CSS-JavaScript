@@ -11,7 +11,7 @@ body{
 /* Top of webpage (navigation) */
 header{
   background-color: black;
-  position: sticky;
+  position: sticky; /* stick to the top of the page */
   top: 0%;
   z-index: 1;  /* will be displayed in front of other elements*/
 }
@@ -20,18 +20,18 @@ main{
   color: white;
 }
 
-
 /* Logo */
 #logo{
+  width: 90%;
   height: 80px;
 }
 
+/* Logo positions */
 #logo a img{
   display: block;
   margin: auto;
   padding: 12px;
 }
-
 
 /* Navigation Bar */
 #navi{
@@ -41,15 +41,6 @@ main{
 #navi ul{
   width: 100%;
 }
-
-/* #navi ul li{
-  list-style-type: none;
-  margin: auto;
-  padding: 5px;
-  text-align: center;
-  width: auto;
-  height: 35px;
-} */
 
 #navi ul li:hover {
   background-color: #d3d3d3a1;
@@ -62,16 +53,23 @@ main{
   font-weight: 500;
 }
 
+button .navbar-toggler-icon{
+  background-color: white;
+}
+
 /* Horizontal Line */
 hr{
-  width: 100%;
-  border-top: 3px solid white;
+  width: 100% !important;
+  border-top: 2px solid white !important;
+  opacity: 1 !important;
+  margin: 0 !important;
 }
 
 /* BreadCrumbs Navigation */
 .breadcrumb{
   padding: 10px 16px !important;
-  list-style: none;
+  margin: 0 !important;
+  position: static;
 }
 
 .breadcrumb-item{
@@ -81,8 +79,7 @@ hr{
 
 /*when add new list, it will auto add and show in the webpage*/
 .breadcrumb li+li:before{
-  padding: 8px;
-  color: white;
+  color: white !important;
   content: ">";
 }
 
@@ -117,19 +114,17 @@ hr{
 
 /*responsive footer*/
 footer{
-  background-color: black;
   color: white;
   padding: 30px 0;
 }
 
-.container {
-  max-width: 1170px;
-  margin: auto;
+.footer-container {
+  width: 90%;
+  margin-left: auto;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 !important;
 }
 
 footer ul {
@@ -169,36 +164,18 @@ Visitors Information and Contact Us
   color: white;
   text-decoration: none;
   font-weight: 300;
-  display: block;
   transition: all 0.3s ease;
 }
 
 .content ul li a:hover {
   color: rgba(255, 255, 255, 0.849);
-  padding-left: 8px;
+  padding-left: 6px;
 }
 
-/* Abt Grand Oceania Harbourfront*/
-.general {
-  width: 32%;
-  padding: 0 15px;
-}
-
-/* Visitor Information and Contact Us*/
-.visitor-info {
-  width: 26%;
-  padding: 0 15px;
-}
-
-.contact-us {
-  width: 26%;
-  padding: 0 15px;
-}
-
-/*Connect with Us*/
-.social-links{
-  width: 16%;
-  padding: 0 15px;
+.list-group-item{
+  background-color: inherit !important;
+  padding: 0 !important;
+  padding-left: 15px !important;
 }
 
 .social-links a{
@@ -217,22 +194,22 @@ Visitors Information and Contact Us
 
 .social-links a:hover {
   color: blue;
+  height: 43px;
+  width: 43px;
+  text-align: center;
   background-color: #ffffff;
 }
 
 /* Copyright */
 .copyright {
   width: 32%;
+  margin-top: 1%;
   padding: 12px;
-}
-
-.contents {
   font-size: 12px;
-  margin-top: 15px;
 }
 
 /*Responsive*/
-@media(max-width: 1120px) {
+/* @media(max-width: 1120px) {
   .general{
     width: 40%;
   }
@@ -247,11 +224,11 @@ Visitors Information and Contact Us
 
   .social-links{
     width: 25%;
-    margin-top: 25px;
+    margin-top: 25px; */
     /*
     margin-left: auto;
     margin-right: 5%; */ /* If these portions remain, it will affect the alignment of the different footer's sections */
-  }
+  /* }
 
   .copyright {
     width: 40%;
@@ -303,30 +280,73 @@ Visitors Information and Contact Us
 
 }
 
-@media(max-width: 620px) {
+@media (max-width: 768px) {
+  .footer-container{
+    margin: auto;
+  }
+
   .general{
-    width: 100%;
-    margin: 0 0 30px 0;
+    width: 50%;
+    margin: 0% 5% 8% 5%;
   }
 
   .visitor-info{
-    width: 100%;
-    margin: 0 0 30px 0;
+    width: 50%;
+    margin: 0% 5% 8% 5%;
   }
 
   .contact-us{
-    width: 100%;
-    margin: 0 0 30px 0;
+    width: 50%;
+    margin: 0% 5% 8% 5%;
   }
 
   .social-links{
-    width: 100%;
-    margin: 0 0 30px 0;
+    width: 50%;
+    margin: 0% 5% 8% 5%;
   }
 
   .copyright {
     width: 100%;
-    margin: 0 0 30px 0;
+  }
+} */
+
+/* Vertical View Port (based off Iphone 6/7/8 Plus) */
+@media (max-width: 430px) {
+
+  .container{
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  #logo a img{
+    width: 325px;
+  }
+
+  .row{
+    display: block !important;
+  }
+
+  .general{
+    width: 100%;
+    margin: 0% 2% 8% 0%;
+  }
+
+  .visitor-info{
+    width: 100%;
+    margin: 0% 2% 8% 0%;
+  }
+
+  .contact-us{
+    width: 100%;
+    margin: 0% 2% 8% 0%;
+  }
+
+  .social-links{
+    width: 100%;
+    margin: 0% 2% 8% 0%;
+  }
+
+  .copyright {
+    width: 100%;
+  }
 }
