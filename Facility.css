@@ -234,12 +234,23 @@ h3{
   }
   /* Pool content position */
   .poolContent{
-    bottom: 2.5%;
+    bottom: 7%;
   }
 
-  /* Gym and Spa content position */
-  .gymContent{
-    bottom: 7%;
+  /* Position the next and prev button to */
+  /* their respective position */
+  .prev{
+    left: 1.7%;
+  }
+
+  .next {
+    right: 1.7%;
+  }
+
+  /*Next & previous buttons style */
+  .prev, .next {
+    padding: 18.8% 0.25%;
+    font-size: 25px;
   }
 
   .rect-container{
