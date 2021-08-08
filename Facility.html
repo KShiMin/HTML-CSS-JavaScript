@@ -17,7 +17,7 @@
   	</head>
   	<body>
 		<!--Responsive Header -->
-		<header>
+		<header class="sticky-top">
 			<div class="container" id="logo">
 				<a href="#" class="navbar-brand navbar-expand-md"><img src="images/Hotel-logo.png" alt=""></a>
 			</div>
@@ -53,34 +53,30 @@
 			<!-- Input your Content -->
 		  	<h1>Facility</h1>
 			<!--Pool Slideshow-->
-			<div class="poolSlideshow-container">
+			<div class="container-fluid position-relative">
 
-				<div class="poolSlides fade">
-				  <a href="FacilityBooking.html"><img src="images/Facility/pool-background.jpg"></a>
-				  <div class="poolContent">
-					<h2>Pool</h2>
-					<br>
-					<h3>Indoor :</h3>
-					<p>
+				<div class="poolSlides">
+				  <a href="FacilityBooking.html"><img src="images/Facility/pool-background.jpg" class="img-fluid"></a>
+				  <div class="container-fluid position-absolute facility-content poolContent">
+					<h3>Swimming Pool</h3>
+					<p class="main-content">
 						Indoor swimming pool is a get away place you have to vist if you are
-						staying at Grand Oceania Harbourfont as 500m wide and 400m long,
-						it's a good place to get away from crowded areas such as the outdoor
-						swimming pool or in the event of rain. It is located at level 2.
-					</p>
-					<br>
-					<h3>Outdoor :</h3>
-					<p>
-						Outdoor swimming pool is 700m wide and 600m long and it has an open view
-						to Vivo City and Sentosa located at the rooftop level 6.
+						staying at Grand Oceania Harbourfont as it is 500m wide and 400m long.
+						It is a good get away place from crowded areas, event of rain or simply craving for 
+						some indoor relaxation. 
+						<br>
+						Outdoor swimming pool is 700m wide and 600m long with an open 
+						view facing VivoCity and there is a playground for your kids to play also! 
 					</p>
 					<p>
 						Operation Hour: 10am to 10pm
 						<br>
-						Things to Note:
+						Location: Level 2 (Indoor) and Level 6 (Outdoor)
 						<ol>
+							Things to Note:
 							<li>First Come First Server basis</li>
 							<li>Book a slot before visiting the area</li>
-							<li>Each slot has a time limit of 1 hour with a limit of 10 people in the area</li>
+							<li>Each slot has a time limit of 1 hour with a limit of 10 pax in the area</li>
 						</ol>
 					</p>
 					<p>
@@ -90,43 +86,45 @@
 				  </div>
 				</div>
 
-				<div class="poolSlides fade">
-					<a href="FacilityBooking.html"><img src="images/Facility/pool-1.jpg"></a>
+				<div class="poolSlides">
+					<a href="FacilityBooking.html"><img src="images/Facility/pool-1.jpg" class="img-fluid"></a>
 				</div>
 
-				<div class="poolSlides fade">
-				  <a href="FacilityBooking.html"><img src="images/Facility/pool-2.jpg"></a>
+				<div class="poolSlides">
+				  <a href="FacilityBooking.html"><img src="images/Facility/pool-2.jpg" class="img-fluid"></a>
 				</div>
 
-				<a class="prevPool" onclick="poolClick(-1)">&#10094;</a>
-				<a class="nextPool" onclick="poolClick(1)">&#10095;</a>	
+				<a class="prev" onclick="poolClick(-1)">&#10094;</a>
+				<a class="next" onclick="poolClick(1)">&#10095;</a>	
 
 				<div class="rect-container">
-					<span class="rect" onclick="currentSlidePool(0)"></span>
-					<span class="rect" onclick="currentSlidePool(1)"></span>
-					<span class="rect" onclick="currentSlidePool(2)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(0)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(1)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(2)"></span>
 				</div>
 			</div>
 
 			<!--Gym Slideshow-->
-			<div class="gymSlideshow-container">
+			<div class="container-fluid position-relative">
 				
-				<div class="gymSlides fade">
+				<div class="gymSlides">
 				<a href="FacilityBooking.html"><img src="images/Facility/gym-background.jpg"></a>
-				<div class="gymContent">
+				<div class="container-fluid position-absolute facility-content gymContent">
 					<h3>Fitness Center</h3>
-					<br>
-					<p>
-						Fitness Center is located at level 2 and it is 300m wide and 200m long
+					<p class="main-content">
+						Our Fitness Center is 300m wide and 250m long with most of the item that a normal fitness
+						center will have! Many gym lovers like to head down to our fitness center for a quick workout to
+						kick-start or end their day when they stay at Grand Oceania Harbourfont.
 					</p>
 					<p>
 						Operation Hour: 10am to 10pm
 						<br>
-						Things to Note:
+						Location: Level 2
 						<ol>
+							Things to Note:
 							<li>First Come First Server basis</li>
 							<li>Book a slot before visiting the area</li>
-							<li>Each slot has a time limit of 1 hour with a limit of 10 people in the area</li>
+							<li>Each slot has a time limit of 1 hour with a limit of 10 pax in the area</li>
 						</ol>
 					</p>
 					<p>
@@ -136,43 +134,44 @@
 				</div>
 				</div>
 
-				<div class="gymSlides fade">
+				<div class="gymSlides">
 					<a href="FacilityBooking.html"><img src="images/Facility/gym-1.jpg"></a>
 				</div>
 
-				<div class="gymSlides fade">
+				<div class="gymSlides">
 					<a href="FacilityBooking.html"><img src="images/Facility/gym-2.jpg"></a>
 				</div>
 
-				<a class="prevGym" onclick="gymClick(-1)">&#10094;</a>
-				<a class="nextGym" onclick="gymClick(1)">&#10095;</a>
+				<a class="prev" onclick="gymClick(-1)">&#10094;</a>
+				<a class="next" onclick="gymClick(1)">&#10095;</a>
 
 				<div class="rect-container">
-					<span class="rect" onclick="currentSlidePool(0)"></span>
-					<span class="rect" onclick="currentSlidePool(1)"></span>
-					<span class="rect" onclick="currentSlidePool(2)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(0)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(1)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(2)"></span>
 				</div>
 			</div>
 
 			<!--Spa Slideshow-->
-			<div class="spaSlideshow-container">
+			<div class="container-fluid position-relative">
 
-				<div class="spaSlides fade">
+				<div class="spaSlides">
 					<a href="FacilityBooking.html"><img src="images/Facility/spa-background.jpg"></a>
-				<div class="spaContent">
+				<div class="container-fluid position-absolute facility-content spaContent">
 						<h3>Spa</h3>
-						<p>
-							Spa is located at level 1 and it is a popular area for relaxation among our visitor
-							after a long day of shopping at the nearby mall Vivo City!
+						<p class="main-content">
+							Enjoy a full body massage at our specialised spa that helps relief tireness within an hour, after a long day at VivoCity 
+							or Sentosa! It is a popular visited area by all of our hotel visitors!
 						</p>
 						<p>
 							Operation Hour: 10am to 10pm
 							<br>
-							Things to Note:
+							Location: Level 1 beside Hotel Lobby
 							<ol>
+								Things to Note:
 								<li>First Come First Server basis</li>
 								<li>Book a slot before visiting the area</li>
-								<li>Each slot has a time limit of 1 hour with a limit of 10 people in the area</li>
+								<li>Each slot has a time limit of 1 hour with a limit of 10 pax in the area</li>
 							</ol>
 						</p>
 						<p>
@@ -182,29 +181,28 @@
 					</div>
 				</div>
 
-				<div class="spaSlides fade">
+				<div class="spaSlides">
 					<a href="FacilityBooking.html"><img src="images/Facility/spa-1.jpg"></a>
 				</div>
 
-				<div class="spaSlides fade">
+				<div class="spaSlides">
 					<a href="FacilityBooking.html"><img src="images/Facility/spa-2.jpg"></a>
 				</div>
 
-				<a class="prevSpa" onclick="spaClick(-1)">&#10094;</a>
-				<a class="nextSpa" onclick="spaClick(1)">&#10095;</a>
+				<a class="prev" onclick="spaClick(-1)">&#10094;</a>
+				<a class="next" onclick="spaClick(1)">&#10095;</a>
 
 				<div class="rect-container">
-					<span class="rect" onclick="currentSlidePool(0)"></span>
-					<span class="rect" onclick="currentSlidePool(1)"></span>
-					<span class="rect" onclick="currentSlidePool(2)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(0)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(1)"></span>
+					<span class="rect rounded" onclick="currentSlidePool(2)"></span>
 				</div>
 			</div>
 			<script src="slideshow.js"></script>
 			<!--Back to Top Button-->
 			<div class="top">
-				<a href="#top" class="top-btn">^</a>				
-			</div>
-			
+				<a href="#" class="top-btn rounded-circle">^</a>				
+			</div>	
 		</main>
 <!--Responsive Footer -->
 		<hr>
@@ -218,7 +216,7 @@
 								<ul class="list-group">
 									<li class="list-group-item"> <a href="#"> Home </a> </li>
 									<li class="list-group-item"> <a href="#"> Rooms </a> </li>
-									<li class="list-group-item"> <a href="#"> Facilities </a> </li>
+									<li class="list-group-item"> <a href="Facility.html"> Facilities </a> </li>
 									<li class="list-group-item"> <a href="#"> Promotions </a> </li>
 								</ul>
 							</div>							
@@ -230,7 +228,7 @@
 								<h4> Visitors Information </h4>
 								<ul class="list-group">
 									<li class="list-group-item"> <a href="#"> Frequently Asked Questions </a> </li>
-									<li class="list-group-item"> <a href="#"> Getting There </a> </li>
+									<li class="list-group-item"> <a href="GettingHere.html"> Getting There </a> </li>
 									<li class="list-group-item"> <a href="#"> Around Us </a> </li>
 								</ul>
 							</div>							

@@ -7,186 +7,97 @@ h1{
   margin: 1% auto;
 }
 
-/* Pool Slideshow container */
-.poolSlideshow-container {
-  width: 90%;
-  position: relative;
+h3{
+  margin: 0 !important;
+}
+
+/* Content font-sizes */
+.container-fluid {
+  width: 85% !important;
   margin: 2% auto;
 }
 
-.poolSlides img{
-  width: 100%;
-  height: 650px;
+.facility-content{
+  background-color: rgba(255, 255, 255, 0.829);
+  padding: 5px;
+  text-align: center;
+  line-height: 1.5;
+  color: black;
+  left: 8%;
 }
 
-.poolSlides a{
+.facility-content p{
+  font-size: 22px;
+}
+
+.facility-content a{
+  color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 
-/* Pool content */
+.facility-content ol{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.facility-content ol li{
+  font-size: 20px;
+  list-style-position: inside; 
+  font-weight: normal; 
+}
+
+.main-content{
+   padding: 2%;
+   padding-bottom: 0%;
+}
+
+/* Position the next and prev button to */
+/* their respective position */
+.prev{
+  left: 0.75%;
+}
+
+.next {
+  right: 0.75%;
+}
+
+/*Next & previous buttons style */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  padding: 19.8% 1%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.26);
+  /* background-color: blue; */
+  color: black;
+}
+
+/* Facilites Slideshow image size */
+.poolSlides img, .gymSlides img, .spaSlides img{
+  width: 100%;
+  height: 700px;
+}
+
+.poolSlides a, .gymSlides a, .spaSlides a{
+  cursor: default !important;
+}
+
+/* Pool content position */
 .poolContent{
-  width: 93%;
-  background-color: rgba(255, 255, 255, 0.801);
-  position: absolute;
-  bottom: 15%;
-  left: 3.5%;
-  padding: 5px;
-  text-align: center;
-  line-height: 1.5;
-  color: white;
+  bottom: 11%;
 }
 
-.poolContent p{
-  font-size: 22px;
-}
-
-.poolContent ol li{
-  font-size: 20px;
-  list-style-position: inside;
-}
-
-/* Pool Next & previous buttons */
-.prevPool , .nextPool {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: 650px;
-  padding: 23% 1.25%;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-/* Position the "next button" to the right */
-.nextPool {
-  right: 0;
-}
-
-.prevPool:hover, .nextPool:hover {
-  background-color: rgba(0, 0, 0, 0.377);
-  color: black;
-}
-
-/* Gym Slideshow container */
-.gymSlideshow-container {
-  width: 90%;
-  position: relative;
-  margin: 2% auto;
-}
-
-.gymSlides img{
-  width: 100%;
-  height: 650px;
-}
-/* Gym content */
-.gymContent{
-  width: 93%;
-  background-color: rgba(255, 255, 255, 0.685);
-  position: absolute;
-  left: 3.5%;
-  bottom: 27%;
-  padding: 5px;
-  text-align: center;
-  line-height: 1.5;
-  color: black;
-}
-
-.gymContent p{
-  font-size: 22px;
-}
-
-.gymContent ol li{
-  font-size: 20px;
-  list-style-position: inside;
-}
-
-.gymContent a{
-  color: black;
-  text-decoration: none;
-}
-
-/* Gym Next & previous buttons */
-.prevGym , .nextGym {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: 650px;
-  padding: 23% 1.25%;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* Position the "next button" to the right */
-.nextGym {
-  right: 0;
-}
-
-.prevGym:hover, .nextGym:hover {
-  background-color: rgba(0, 0, 0, 0.26);
-}
-
-/* Spa Slideshow container */
-.spaSlideshow-container {
-  width: 90%;
-  position: relative;
-  margin: 2% auto;
-}
-
-.spaSlides img{
-  width: 100%;
-  height: 650px;
-}
-/* Gym content */
-.spaContent{
-  width: 93%;
-  background-color: rgba(255, 255, 255, 0.685);
-  position: absolute;
-  left: 3.5%;
-  bottom: 27%;
-  padding: 5px;
-  text-align: center;
-  line-height: 1.5;
-  color: black;
-}
-
-.spaContent p{
-  font-size: 22px;
-}
-
-.spaContent ol li{
-  font-size: 20px;
-  list-style-position: inside;
-}
-
-.spaContent a{
-  color: black;
-  text-decoration: none;
-}
-
-/* Spa Next & previous buttons */
-.prevSpa , .nextSpa {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: 650px;
-  padding: 23% 1.25%;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* Position the "next button" to the right */
-.nextSpa {
-  right: 0;
-}
-
-.prevSpa:hover, .nextSpa:hover {
-  background-color: rgba(0, 0, 0, 0.26);
+/* Gym and Spa content position */
+.gymContent, .spaContent{
+  bottom: 14%;
 }
 
 /* The rectange indicator */
@@ -200,10 +111,9 @@ h1{
 .rect {
   cursor: pointer;
   height: 15px;
-  width: 150px;
+  width: 90px;
   margin: 0 1%;
-  background-color: #bbb;
-  border-radius: 2.5%;
+  background-color: rgba(255, 255, 255, 0.829);
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -212,15 +122,3 @@ h1{
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: animate;
-  -webkit-animation-duration: 1s;
-  animation-name: animate;
-  animation-duration: 1s;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen{
-  .prev, .next,.text {font-size: 11px}
-}

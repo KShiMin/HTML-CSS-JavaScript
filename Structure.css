@@ -11,10 +11,8 @@ body{
 /* Top of webpage (navigation) */
 header{
   background-color: black;
-  position: sticky; /* stick to the top of the page */
-  top: 0%;
-  z-index: 1;  /* will be displayed in front of other elements*/
 }
+
 /* Content word color */
 main{
   color: white;
@@ -100,7 +98,6 @@ hr{
   float: right;
   margin: 1%;
   text-align: center;
-  border-radius: 60%;
   border: 1px solid grey;
   color: white;
   text-decoration: none;
