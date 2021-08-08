@@ -95,8 +95,7 @@ b{
   list-style-type: lower-roman;
 }
 
-/* Responsive Webpage Content */
-/* Gotten viewpoet sizes from developer console */
+/* Responsive Webpage Content - Gotten viewport sizes from developer console */
 
 /* Horizontal View Port (with reference to iPad Pro) */
 @media (max-width: 1366px) {
@@ -135,7 +134,7 @@ b{
 }
 
 /* Vertical View Port (with reference to iPhone) */
-@media (max-width : 430px) {
+@media (max-width : 500px) {
   .h1{
     margin: 0;
   }
@@ -153,14 +152,14 @@ b{
   }
   /* Content font-sizes */
   .publicTrans p, .directContent ol li{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h3, .publicTrans h3{
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .directContent h4{
-    font-size: 15px;
+    font-size: 17px;
   }
 }

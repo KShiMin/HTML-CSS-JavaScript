@@ -14,7 +14,7 @@
 }
 
 table{
-  width: 30% !important;
+  width: 35% !important;
   margin: 2% auto !important;
   color: white !important;
   border: 1px solid white;
@@ -33,15 +33,16 @@ table th{
 
 .calendar-container{
   width: fit-content;
+  position: absolute;
 }
 
 /* Calendar Icon Position */
-.position{
+.fa{
   color: black;
-  margin-top: 0.25%;
-  font-size: 18px;
+  font-size: 20px;
   position: absolute;
-  left: 57%;
+  right: 10%;
+  line-height: 1.4 !important;
 }
 
 
@@ -64,7 +65,7 @@ table th{
 }
 
 /* Submit button */
-button{
+.submit-btn{
   width: 14%;
   height: 8%;
   font-size: 22.5px;
@@ -73,20 +74,15 @@ button{
   border:none;
 }
 
-button:hover{
+.submit-btn:hover{
   background-color: #cdaa7d;
   color: white;
 }
 
-/* Responsive Webpage Content */
-/* Gotten viewport sizes from developer console */
+/* Responsive Webpage Content - Gotten viewport sizes from developer console */
 
 /* Horizontal View Port (with reference to iPad Pro) */
 @media (max-width: 1366px) {
-  /* Table width */
-  table{
-    width: 45% !important;
-  }
 
   /* Terms and Conditions font-sizing */
   .terms input{
@@ -94,7 +90,7 @@ button:hover{
     height: 15px;
   }
 
-  button, .terms h4{
+  .submit-btn, .terms h4{
     font-size: 18px;
   }
 }
@@ -106,44 +102,30 @@ button:hover{
     width: 55% !important;
   }
 
-  /* Calendar Icon */
-  .position{
-    margin-top: 0.75%;
-    font-size: 16px;
-    left: 63%;
-  }
-
   /* Terms and Conditions font-sizing */
   .terms input{
     width: 15px;
     height: 15px;
   }
 
-  button, .terms h4{
-    font-size: 18px;
-  }
-}
-
-/* Vertical View Port (with reference to iPhone X) */
-@media (max-width : 812px) {
-  /* Calendar Icon */
-  .position{
-    margin-top: 0.75%;
-    font-size: 16px;
-    left: 67%;
+  table th{
+    font-size: 17px;
   }
 
+  .submit-btn, .terms h4{
+    font-size: 17px;
+  }
 }
 
 /* Vertical View Port (with reference to iPhone) */
-@media (max-width : 430px) {
+@media (max-width : 500px) {
   /* Table width and font-sizes */
   table{
-    width: 90% !important;
+    width: 98% !important;
   }
 
   table th{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   /* Form Inputs */
@@ -151,16 +133,9 @@ button:hover{
     height: 10%;
   }
 
-  /* Calendar Icon */
-  .position{
-    margin-top: 1%;
-    font-size: 16px;
-    left: 85%;
-  }
-
   /* Terms and Conditions font-sizing */
   .terms p{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .terms input{
@@ -169,10 +144,10 @@ button:hover{
   }
 
   .terms h4{
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  button{
-    font-size: 14px;
+  .submit-btn{
+    font-size: 17px;
   }
 }

@@ -51,8 +51,8 @@ main{
   font-weight: 500;
 }
 
-button .navbar-toggler-icon{
-  background-color: white;
+.fa-bars{
+  color: white;
 }
 
 /* Horizontal Line */
