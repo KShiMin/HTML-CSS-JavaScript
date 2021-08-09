@@ -1,6 +1,7 @@
 // set global count
 var check = "none";
 
+
 //function to show/hide calendar
 function showCalendar(num){
     var click = document.getElementsByClassName("calendar");
@@ -21,7 +22,6 @@ function displayCalendar(){
         check = "block";
     }
     else{
-        console.log("hi")
         calendar[0].style.display = "none";
         check = "none";
     }
@@ -31,23 +31,28 @@ function displayCalendar(){
 document.addEventListener("mouseup", function(event) {
     // get month container 
     var obj = document.querySelector(".month-container");
-    
+
     // const array of month-container children classnames
-    const check_name = ["days", "today", "prev", "nextDates", "next", "month", "days today", "over", "over prevDates", "days click"];
+    const check_name = ["days", "today", "prev", "prevDates", "nextDates", "next", "month", "days today", "over", "over prevDates", "days nextDates"];
 
     // get clicked target classname 
     var e = event.target.className;
-    console.log("event target is " + e)
-    console.log("class name includes " + obj.className.includes(e));
+
     // get clicked target parent classname 
     var e_parent = event.target.parentNode.className;
 
     // get clicked target id 
     var e_id = event.target.id;
-    console.log("event target id is " + e_id)
-
-    // call select 
-    select(e_id);
+    
+    if(e_id !== ""){
+        // call select 
+        select(e_id);
+        // moveToNextMonth(e_id);
+    }
+    
+    if(e.includes("nextDates") || e.includes("prevDates")){
+        checkDir(e, e_id);
+    }
 
     // call direction for arrow 
     direction(e);
@@ -59,55 +64,82 @@ document.addEventListener("mouseup", function(event) {
 
     // check if click event is outside month-container 
     else if(!obj.className.includes(e) && check === "block" && !check_name.includes(e)){
-        console.log("hello")
         displayCalendar();
     }
-});
+})
 
-// initialise first clicked date id
-var clickedId = "";
 
 // function to select dates
 function select(e){
-    var count = 0;
-    if(e.includes("days") || e.includes("nextDates") || e.includes("prevDates")){
-        // if else to check if first clicked date and second clicked date is not none 
-        if(clickedId === "" || clickedId !== ""){
-            // checkClick()
-            if (!e.includes('click')){
-                clickedId = e;
-                console.log("clicked ID is" +  clickedId);
-                // get element from id and give it click class
-                var clicked = document.getElementById(e);
-                clicked.classList.add('click');
-                console.log(clicked)             
-            } else{
-                console.log("hi")
-            }
-        }
-        count += 1
-        // if to check if firstid and secid not none 
-        if(clickedId !== "" && count > 0){
-            console.log(count)
-            // get first num and second num from element textcontent
-            var clickedNum = parseInt(document.getElementById(clickedId).textContent);
-            console.log("clickedNum is " + clickedNum)
-            // set check in check out day
-            // document.querySelector(".day_1").innerHTML = firstNum;
+    // get all elements with class days
+    var child = document.querySelectorAll(".days");
+
+    var content = document.getElementById(e);
+    var text = content.textContent;
+
+    // for loop to find which element contains the class "days"
+    for(i=0; i < child.length; i++){
+        if(child[i].className.includes("today")){
+            var id = child[i].id;
+            var change = document.getElementById(id);
+            change.classList.remove("today");
+            break
         }
     }
-    
+
+    // for loop to find the element that is clicked and set class "days" to it
+    for(i=0; i< child.length; i++){
+        if(child[i].id === e){
+            var id= child[i].id;
+            var change = document.getElementById(id);
+            change.classList.add("today");
+            break
+        }
+    }
+    write(text);
 }
 
-function checkClick(){
-    var check_body = document.getElementsByTagName("th");
-    console.log(check_body)
-    for(i = 0; i<check_body; i++){
-        console.log("hello " + i);
+// function to check if nextDates or prevDates were clicked
+function checkDir(name, dire){
+
+    var content = document.getElementById(dire);
+    var text = content.textContent;
+
+    if (name.includes("nextDates")){
+        direction("next");
+        setnewToday(text);
+        write(text);
     }
-    // if (check_body.className.includes(" click")){
-    //     console.log("hi")
-    // }
+    else if (name.includes("prevDates")){
+        direction("prev");
+        setnewToday(text);
+        write(text);
+    }
+}
+
+// function to highlight the clicked dates
+function setnewToday(text){
+
+    // get all elements with class days
+    var child = document.querySelectorAll(".days");
+
+      // for loop to find which element contains the class "days"
+    for(i=0; i < child.length; i++){
+        if(child[i].className.includes("today")){
+            var id = child[i].id;
+            var change = document.getElementById(id);
+            change.classList.remove("today");
+            break
+        }
+    }
+
+     // for loop to find the element that is clicked and set class "days" to it
+    for(i=0; i< child.length; i++){
+        var id= child[i].id;
+        var change = document.getElementById("days_" + text);
+        change.classList.add("today");
+        break
+    }  
 }
 
 // create base date obj 
@@ -116,6 +148,9 @@ var date = new Date();
 // create date for calendar and set date to 1
 var calendarDate = new Date();
 calendarDate.setDate(1);
+
+// create 
+var secondCalendar = new Date();
 
 // get today day index
 var todayIndex = new Date().getDay();
@@ -157,6 +192,8 @@ function deleteTbody() {
     firstTable.removeChild(firstBody);
 }
 
+
+
 // function to generate calendar
 function firstCalendar() {
 
@@ -168,6 +205,9 @@ function firstCalendar() {
 
     // get location to put month 
     var monthName = document.querySelector("#month");
+
+    var thead = document.querySelector("thead");
+    thead.setAttribute("id",  (currentMonth + 1))
 
     // get first day of month index 
     // also used for number of prev months date to add into calendar
@@ -201,6 +241,7 @@ function createPrevDate(tr, firstDay, lastDay, month) {
         }
         else{
             th.setAttribute("class", "prevDates");
+            th.setAttribute("id", "prev_" + (lastDay - i + 1));
         }
 
         var prevMonthDate = lastDay - i + 1;
@@ -226,6 +267,8 @@ var createCalendar = (lastDayCurrent, firstDay, table, lastDayPrev, month, month
     // outer for loop to loop through num of row
     for (i = 0; i < row; i++) {
         tr = document.createElement('tr');
+        // set an id to calendar row
+        tr.setAttribute("id", "month_table_row")
         // inner for loop to loop through num of col
         for (j = 0; j < col; j++) {
             // create th element
@@ -258,7 +301,7 @@ var createCalendar = (lastDayCurrent, firstDay, table, lastDayPrev, month, month
                     th.setAttribute("id", "days_" + counter);
                 }
 
-                // create text element 
+                // create text element --> for prevDates number to be shown on calendar
                 var text = document.createTextNode(counter.toString());
 
                 // append text to th and append th to tr
@@ -268,10 +311,10 @@ var createCalendar = (lastDayCurrent, firstDay, table, lastDayPrev, month, month
             }
             else {
                 //set th attribute
-                th.setAttribute("class", "nextDates");
+                th.setAttribute("class", "days nextDates");
                 th.setAttribute("id", "next_" + nextDates);
 
-                //create text element 
+                //create text element --> for nextDates number to be shown on calendar
                 var text = document.createTextNode(nextDates.toString());
 
                 //append text to th and append th to tr 
@@ -294,14 +337,35 @@ function direction(dir) {
     // if statement to check for direction
     if (dir === "next") {
         calendarDate.setMonth(calendarDate.getMonth() + 1);
+        // set secondCalendar month
+        secondCalendar.setMonth(secondCalendar.getMonth() + 1);
         deleteTbody();
         firstCalendar();
     }
     else if (dir === "prev") {
         calendarDate.setMonth(calendarDate.getMonth() - 1);
+        secondCalendar.setMonth(secondCalendar.getMonth() - 1);
         deleteTbody();
         firstCalendar();
     }
+}
+
+function write(day){
+    var day = day;
+    var month = secondCalendar.getMonth() + 1;
+    var year = secondCalendar.getFullYear();
+    var input = document.querySelector(".date-container input");
+
+    if (day < 10) {
+        day = '0' + day;
+    }
+
+    if (month < 10) {
+        month = '0' + month;
+    }
+    var format = day + '/' + month + '/' + year;
+
+    input.value = format;
 }
 
 

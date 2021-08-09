@@ -47,22 +47,20 @@ table th{
 
 /* Calendar container */
 .calendar{
-  /* background-color: rgba(3, 3, 3, 0.699);
-  border: 1px solid grey; */
-  height: 350px;
-  width: 300px;
+  background-color: rgba(3, 3, 3, 0.699);
   display: none;
 }
 
 .month{
   width: 100% !important;
   margin: 0 !important;
-  background-color: rgba(3, 3, 3, 0.699)
+  background-color: black;
 }
 
 .month-container th{
-  width: 34px;
+  width: 38px;
   font-size: 16px;
+  text-align: center;
 }
 
 /* Exit button for calendar */
@@ -109,7 +107,8 @@ table th{
 
 /* set border for today date */
 .today{
-  border: 2px solid rgba(21, 21, 90, 0.877);
+  border: 2px solid rgba(255, 255, 255, 0.877) !important;
+  background-color: blue;
 }
 
 /* set prev month dates */
@@ -136,7 +135,6 @@ table th{
 
 /* Terms and Conditions */
 .terms{
-  margin: 0 !important;
   text-align: justify;
   line-height: 1.5;
   padding-left: 10%;

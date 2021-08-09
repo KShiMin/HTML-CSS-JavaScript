@@ -56,17 +56,17 @@
 		<!-- Input your Content-->
 		<h1>Facility Reservation</h1>
 		<div class="table-responsive-md">
-			<form action="confirmation.html">
+			<form action="confirmation.html" class="remove">
 				<!--Table to align form content-->
 				<table class="table form-container">
 					<tr>
-						<th>Name:</th>
-						<td>
+						<th class="remove">Name:</th>
+						<td class="remove">
 							<input type="text" name="name" placeholder="e.g. John Ng" required>
 						</td>
 					</tr>
 					<tr>
-						<th>Date:</th>
+						<th class="remove">Date:</th>
 						<td>
 							<div class="date-container">
 								<div class="inputs">
@@ -74,7 +74,6 @@
 									<i class="fa fa-calendar position"></i>									
 								</div>
 								<div class="calendar">
-									
 									<div class="month-container">
 										<table class="month">
 											<thead>
@@ -100,8 +99,8 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Time:</th>
-						<td>
+						<th class="remove">Time:</th>
+						<td class="remove">
 							<select name="timeslot" id="" class="form-select-md">
 								<option value=""></option>
 								<option value="">1000 - 1100</option>
@@ -120,8 +119,8 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Facility:</th>
-						<td>
+						<th class="remove">Facility:</th>
+						<td class="remove">
 							<select name="" id="" class="form-select-md">
 								<option value=""></option>
 								<optgroup label="Swimming Pool">
@@ -134,8 +133,8 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Adults:</th>
-						<td>
+						<th class="remove">Adults:</th>
+						<td class="remove">
 							<input type="number" name="adults" min="1" max="10" required>
 						</td>
 					</tr>
@@ -161,7 +160,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan="2">
+						<td colspan="2" class="remove">
 							<button type="submit" name="submit" class="submit-btn">Submit</button>					
 						</td>
 					</tr>
