@@ -68,11 +68,33 @@
 					<tr>
 						<th>Date:</th>
 						<td>
-							<div class="calendar-container">
-								<input type="text" name="name" placeholder="dd/mm/yyyy" required>
-								<i class="fa fa-calendar position"></i>
-								<div class="calendar-btn">
-
+							<div class="date-container">
+								<div class="inputs">
+									<input type="text" name="name" placeholder="dd/mm/yyyy" required>
+									<i class="fa fa-calendar position"></i>									
+								</div>
+								<div class="calendar">
+									
+									<div class="month-container">
+										<table class="month">
+											<thead>
+												<tr class="caption">
+													<th><a class="prev">&#60;</a></th>
+													<th colspan="5" id="month"></th>
+													<th><a class="next">&#62;</a></th>
+												</tr>
+												<tr class="weekdays">
+													<th>MO</th>
+													<th>TU</th>
+													<th>WE</th>
+													<th>TH</th>
+													<th>FR</th>
+													<th>SA</th>
+													<th>SU</th>
+												</tr>
+											</thead>
+										</table>
+									</div>
 								</div>									
 							</div>
 						</td>
@@ -146,6 +168,7 @@
 				</table>
 			</form>		
 		</div>
+		<script src="calendar_v2.js"></script>
 	</main>
 	<!--Responsive Footer -->
 	<hr>

@@ -31,7 +31,7 @@ table th{
   font-size: 18px;
 }
 
-.calendar-container{
+.date-container{
   width: fit-content;
   position: absolute;
 }
@@ -45,6 +45,94 @@ table th{
   line-height: 1.4 !important;
 }
 
+/* Calendar container */
+.calendar{
+  /* background-color: rgba(3, 3, 3, 0.699);
+  border: 1px solid grey; */
+  height: 350px;
+  width: 300px;
+  display: none;
+}
+
+.month{
+  width: 100% !important;
+  margin: 0 !important;
+  background-color: rgba(3, 3, 3, 0.699)
+}
+
+.month-container th{
+  width: 34px;
+  font-size: 16px;
+}
+
+/* Exit button for calendar */
+#calendar-exit{
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* set arrow size */
+.prev, .next{
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+.prev:hover, .next:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/* set hover for table cell */
+.days{
+  cursor: pointer;
+}
+
+.days:hover{
+  background-color: rgba(184, 181, 181, 0.877);
+}
+
+/* set opacity to previous dates */
+.over, .prevDates, .nextDates{
+  opacity: 0.3;
+}
+
+.over:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: default;
+}
+
+/* set border for today date */
+.today{
+  border: 2px solid rgba(21, 21, 90, 0.877);
+}
+
+/* set prev month dates */
+.prevDates:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: pointer;
+}
+
+/* set next months dates */
+
+.nextDates:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: pointer;
+}
+
+.click {
+  background-color: rgba(21, 21, 90, 0.877);
+  color: white;
+}
+
+.selected{
+  background-color: rgba(221, 219, 219, 0.699);
+}
 
 /* Terms and Conditions */
 .terms{
@@ -82,7 +170,7 @@ table th{
 /* Responsive Webpage Content - Gotten viewport sizes from developer console */
 
 /* Horizontal View Port (with reference to iPad Pro) */
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
 
   /* Terms and Conditions font-sizing */
   .terms input{
@@ -118,7 +206,7 @@ table th{
 }
 
 /* Vertical View Port (with reference to iPhone) */
-@media (max-width : 500px) {
+@media (max-width : 425px) {
   /* Table width and font-sizes */
   table{
     width: 98% !important;
