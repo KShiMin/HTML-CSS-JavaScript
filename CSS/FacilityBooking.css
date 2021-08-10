@@ -130,7 +130,12 @@ table th{
   background-color: rgba(221, 219, 219, 0.699);
 }
 
-/* Terms and Conditions */
+/* Align input to center */
+.mid{
+  text-align: center;
+}
+
+/* Terms and Conditions content */
 .terms{
   text-align: justify;
   line-height: 1.5;
