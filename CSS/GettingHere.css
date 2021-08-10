@@ -1,0 +1,194 @@
+/* General --> applies throughout the webpage */
+h1{
+  text-align: center;
+  margin: 1% auto;
+}
+
+/* Display flex for all content container */
+.positions{
+  display: flex;
+  margin: 2.5% 1.5%;
+}
+
+/* Public Transport position */
+.publicTrans{
+  width: 45%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.publicTrans p{
+  font-size: 18px;
+}
+
+.publicTrans h3{
+  line-height: 1.5;
+}
+
+.mrtContent{
+  margin-top: 15%;
+  margin-bottom: 3%;
+}
+
+/* Hotel location info */
+.map{
+  float: right;
+  width: 55%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.map iframe{
+  padding: 0;
+  width: 100%;
+  height: 400px;
+}
+
+/* Direction - general */
+h3{
+  text-align: center;
+  margin: 0 !important;
+}
+
+/* Direction on getting there Video */
+.directVideo{
+  width: 52.5%;
+  float: left;
+  font-weight: 500;
+}
+
+video{
+  width: 100%;
+  margin: 1.2% auto 0%;
+}
+
+/* Direction on getting there Content */
+.directContent{
+  width: 45%;
+  height: 90%;
+  margin: 1.2%;
+  float: right;
+  font-weight: 500;
+}
+
+.directContent h4{
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.directContent ol li{
+  list-style-position: inside;
+  text-align: justify;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+b{
+  font-weight: 600;
+}
+
+/*Indentation for inside list*/
+.indent{
+  list-style-type: lower-roman;
+}
+
+/* Responsive Webpage Content - Gotten viewport sizes from developer console */
+
+/* Laptop L size */
+@media (max-width: 1440px) {
+  .viaBus video{
+    margin: 12% auto;
+  }
+}
+
+/* Laptop size */
+@media (max-width : 1024px) {
+  h1{
+    font-size: 30px;
+  }
+  
+  h3{
+    font-size: 21px;
+  }
+
+  .publicTrans p{
+    font-size: 18px;
+  }
+
+  /* Map content */
+  .map iframe{
+    height: 300px;
+  }
+  
+  /* set back the original formatting */
+  .viaBus video{
+    margin: 1.2% auto 0%;
+  }
+
+  /* Content width */
+  .directVideo, .directContent{
+    width: 100%;
+  }
+
+  .videoContent-positions{
+    display: block;
+  }
+
+  .directContent{
+    text-align: center; 
+  }
+
+  .directContent ol li{
+    font-size: 18px;
+  }
+}
+
+/* Tablet size */
+@media (max-width: 768px) {
+  h3{
+    font-size: 18px;
+  }
+
+  .publicTrans p{
+    font-size: 16.5px;
+  }
+
+  /* Map content */
+  .map iframe{
+    height: 250px;
+  }
+
+  .directContent ol li{
+    font-size: 16.5px;
+  }
+}
+
+/* Mobile L size */
+@media (max-width : 425px) {
+  h1{
+    font-size: 20px;
+  }
+  .positions{
+    display: block;
+    margin: 2% 0%;
+  }
+  /* Map content */
+  .map iframe{
+    height: 225px;
+  }
+  /* Content width */
+  .publicTrans, .map, .directVideo, .directContent{
+    width: 100%;
+  }
+  /* Content font-sizes */
+  .publicTrans p, .directContent ol li{
+    font-size: 16px;
+  }
+
+  .directContent h4{
+    font-size: 17px;
+  }
+}

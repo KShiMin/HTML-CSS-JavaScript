@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ h1{
+  text-align: center;
+  margin: 1% 0;
+}
+
+.table-responsive-md{
+  margin: 1.5%;
+}
+
+.form-container{
+  box-shadow: -10px 10px rgb(151, 151, 151);
+}
+
+table{
+  width: 32% !important;
+  margin: 2% auto !important;
+  color: white !important;
+  border: 1px solid white;
+}
+
+th, td{
+  border-style: none !important;
+  padding: 1%;
+}
+
+table th{
+  width: 45%;
+  text-align: right;
+  font-size: 18px;
+}
+
+.date-container{
+  width: fit-content;
+  position: absolute;
+}
+
+/* Calendar Icon Position */
+.fa{
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* Calendar container */
+.calendar{
+  background-color: rgba(3, 3, 3, 0.699);
+  display: none;
+}
+
+.month{
+  width: 100% !important;
+  margin: 0 !important;
+  background-color: black;
+}
+
+.month-container th{
+  width: 38px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Exit button for calendar */
+#calendar-exit{
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* set arrow size */
+.prev, .next{
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+.prev:hover, .next:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/* set hover for table cell */
+.days{
+  cursor: pointer;
+}
+
+/* set opacity to previous dates */
+.over, .prevDates, .nextDates{
+  opacity: 0.3;
+}
+
+.over:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: default;
+}
+
+/* set border for today date */
+.today{
+  border: 2px solid rgba(255, 255, 255, 0.877) !important;
+  background-color: blue;
+}
+
+/* set prev month dates */
+.prevDates:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: pointer;
+}
+
+/* set next months dates */
+
+.nextDates:hover{
+  background-color: rgba(221, 219, 219, 0.699);
+  cursor: pointer;
+}
+
+.click {
+  background-color: rgba(21, 21, 90, 0.877);
+  color: white;
+}
+
+.selected{
+  background-color: rgba(221, 219, 219, 0.699);
+}
+
+/* Terms and Conditions */
+.terms{
+  text-align: justify;
+  line-height: 1.5;
+  padding-left: 10%;
+}
+
+.terms a{
+  color: white;
+  text-decoration: none;
+}
+
+.terms input{
+  width: 17px;
+  height: 17px;
+}
+
+/* Submit button */
+.submit-btn{
+  width: 14%;
+  height: 8%;
+  font-size: 22.5px;
+  margin: 0% 43%;
+  border-radius: 10px;
+  border:none;
+}
+
+.submit-btn:hover{
+  background-color: #cdaa7d;
+  color: white;
+}
+
+/* Responsive Webpage Content - Gotten viewport sizes from developer console */
+
+/* Laptop L size */
+@media (max-width: 1440px) {
+  /* Table width */
+  table{
+    width: 40% !important;
+  }
+
+  table th{
+    font-size: 18px;
+  }
+
+  /* Terms and Conditions font-sizing */
+  .terms input{
+    width: 15px;
+    height: 15px;
+  }
+
+  .submit-btn, .terms h4{
+    font-size: 18px;
+  }
+}
+
+/* Laptop Size */
+@media (max-width : 1024px) {
+  h1{
+    font-size: 30px;
+  }
+
+  /* Table width */
+  table{
+    width: 53% !important;
+  }
+
+  /* Terms and Conditions font-sizing */
+  .terms input{
+    width: 15px;
+    height: 15px;
+  }
+
+  table th{
+    font-size: 17px;
+  }
+
+  .submit-btn, .terms h4{
+    font-size: 17px;
+  }
+}
+
+/* Tablet Size */
+@media (max-width: 768px) {
+  h1{
+    font-size: 24px;
+  }
+
+  /* Table width and font-sizes */
+  table{
+    width: 73% !important;
+  }
+
+  table th{
+    font-size: 17px;
+  }
+
+  .submit-btn, .terms h4{
+    font-size: 17px;
+  }
+}
+
+/* Mobile Size L */
+@media (max-width : 425px) {
+  /* Table width and font-sizes */
+  table{
+    width: 97% !important;
+  }
+
+  table th{
+    font-size: 16px;
+  }
+
+  /* Form Inputs */
+  table input, table select{
+    height: 10%;
+  }
+  /* Calendar Icon position */
+  .fa{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    right: 12%;
+  }
+  /* Terms and Conditions font-sizing */
+  .terms p{
+    font-size: 16px;
+  }
+
+  .terms input{
+    width: 13px;
+    height: 13px;
+  }
+
+  .terms h4{
+    font-size: 16px;
+  }
+
+  .submit-btn{
+    font-size: 17px;
+    width: 16%;
+  }
+
+  .calendar{
+    position: absolute;
+  }
+
+}
+
+/* Mobile Size S */
+@media (max-width: 375px) {
+  .submit-btn{
+    font-size: 16px;
+  }
+}
