@@ -18,9 +18,13 @@ main{
   color: white;
 }
 
+/* Set bootstrap container to 100% width everytime */
+.container{
+  min-width: 100% !important
+}
+
 /* Logo */
 #logo{
-  width: 90%;
   height: 80px;
 }
 
@@ -115,16 +119,7 @@ section {
 	padding: 20px 0;
 }
 
-section .section-title {
-	text-align: center;
-	color: #007b5e;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-}
-
 #footer {
-	background: black !important;
-	color: white !important;
 	margin-top: 50px;
 }
 
@@ -137,7 +132,6 @@ section .section-title {
 #footer a {
 	color: #ffffff;
 	text-decoration: none !important;
-	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
 
@@ -191,6 +185,7 @@ section .section-title {
 /* Responsive Footer - Gotten viewport sizes from developer console */
 /* Tablet size */
 @media (max-width: 768px) {
+  /* change content be displayed vertically */
   .col-md-4{
     width: 100% !important;
   }
@@ -198,6 +193,7 @@ section .section-title {
 
 /* Mobile L size */
 @media (max-width: 425px) {
+  /* change the width of image to fit screen size */
   #logo a img{
     width: 100%;
   }
