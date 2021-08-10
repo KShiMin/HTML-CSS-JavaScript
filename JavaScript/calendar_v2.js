@@ -3,18 +3,6 @@ var check = "none";
 
 
 //function to show/hide calendar
-function showCalendar(num){
-    var click = document.getElementsByClassName("calendar");
-    if (num === 0){
-        click[0].style.display = "none";
-        check = "none";
-    }
-    else{
-        click[0].style.display = "block";
-        check = "block";
-    }
-}
-
 function displayCalendar(){
     var calendar = document.getElementsByClassName("calendar");
     if (check === "none"){
@@ -97,11 +85,16 @@ function select(e){
         }
     }
     write(text);
+    // set check to block and call displayCalendar function to 
+    // hide calendar after user selected the date they want
+    check = "block";
+    displayCalendar();
 }
 
 // function to check if nextDates or prevDates were clicked
 function checkDir(name, dire){
 
+    // get the content for clicked element
     var content = document.getElementById(dire);
     var text = content.textContent;
 
@@ -149,7 +142,7 @@ var date = new Date();
 var calendarDate = new Date();
 calendarDate.setDate(1);
 
-// create 
+// create another date obj to store content needed to be written into input box
 var secondCalendar = new Date();
 
 // get today day index
